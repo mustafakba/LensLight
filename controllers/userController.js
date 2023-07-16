@@ -1,4 +1,5 @@
 import User from "../models/userModel.js";
+import bcrypt from "bcrypt";
 
 const createUser = async (req, res) => {
     try {
@@ -16,6 +17,40 @@ const createUser = async (req, res) => {
     }
 };
 
+const loginUser = async (req, res) => {
+    try {
+        const { username, password } = req.body;
 
+        console.log('req.body', req.body);
 
-export default { createUser };
+        const user = await User.findOne({ username });
+
+        let same = false;
+
+        if (user) {
+            same = await bcrypt.compare(password, user.password);
+            console.log('same', same);
+        } else {
+            return res.status(401).json({
+                success: false,
+                error: 'There is no such user',
+            });
+        }
+
+        if (same) {
+            res.status(200).send('You are loggend in');
+        } else {
+            res.status(401).json({
+                success: false,
+                error: 'Paswords are not matched',
+            });
+        }
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error,
+        });
+    }
+};
+
+export { createUser, loginUser };
