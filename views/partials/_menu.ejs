@@ -24,18 +24,35 @@
                   >Photos</a
                 >
               </li>
+
+              <% if(user) { %>
+              <li>
+                <a
+                  class="<%= link === 'dashboard' && 'active' %>"
+                  href="/users/dashboard"
+                  >Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="/logout">Logout</a>
+              </li>
+              <% } else{ %>
               <li>
                 <a class="<%= link === 'login' && 'active' %>" href="/login"
-                >Login</a
+                  >Login</a
                 >
               </li>
+
               <li>
-                <a class="<%= link === 'register' && 'active' %>" href="/register"
-                >Register</a
+                <a
+                  class="<%= link === 'register' && 'active' %>"
+                  href="/register"
+                  >Register</a
                 >
               </li>
+              <% } %>
             </ul>
-<!--
+            <!--
             <button class="nav-toggler">
               <span></span>
             </button>
@@ -43,7 +60,7 @@
           </nav>
         </div>
       </div>
-<!--     <div class="col-md-2 di_none">
+      <!--     <div class="col-md-2 di_none">
         <ul class="email text_align_right">
           <li><a href="Javascript:void(0)">Login</a></li>
           <li>
@@ -53,7 +70,6 @@
           </li>
         </ul>
       </div>
-    -->
-    </div>
+    --></div>
   </div>
 </header>
