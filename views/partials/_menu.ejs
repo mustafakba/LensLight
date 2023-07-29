@@ -26,6 +26,13 @@
               </li>
 
               <% if(user) { %>
+                <li>
+                  <a
+                          class="<%= link === 'users' && 'active' %>"
+                          href="/users"
+                  >Users</a
+                  >
+                </li>
               <li>
                 <a
                   class="<%= link === 'dashboard' && 'active' %>"
