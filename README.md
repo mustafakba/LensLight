@@ -9,17 +9,17 @@ Lenslight projesi, kullanıcıların sisteme kayıt olabildiği, giriş yapabild
 Kullanılan Paketler ve Açıklamaları
 Bu projede aşağıdaki paketler kullanılmıştır ve her birinin neden gerekli olduğu aşağıda belirtilmiştir:
 
-bcrypt: Kullanıcı şifrelerini güvenli bir şekilde hash'lemek için kullanılır.
-cloudinary: Medya dosyalarını yüklemek ve yönetmek için bulut tabanlı bir hizmeti entegre eder.
-cookie-parser: Tarayıcı çerezlerini işlemek ve yönetmek için kullanılır.
-dotenv: Çevresel değişkenleri projede kullanmak için kullanılır.
-ejs: Şablon motoru olarak kullanılır, dinamik HTML içeriği oluşturmak için tercih edilir.
-express: Web uygulama çerçevesidir, yönlendirme ve sunucu yönetimi için kullanılır.
-express-fileupload: Dosya yükleme işlemlerini kolaylaştırmak için kullanılır.
-jsonwebtoken: JSON Web Token'ları oluşturmak ve doğrulamak için kullanılır.
-method-override: HTTP taleplerini düzenlemek ve geçersiz kılmak için kullanılır.
-mongodb: MongoDB veritabanına erişim sağlar.
-mongoose: MongoDB işlemlerini yönetmek ve veritabanını modellemek için kullanılır.
+bcrypt: Kullanıcı şifrelerini güvenli bir şekilde hash'lemek için kullanılır. </br>
+cloudinary: Medya dosyalarını yüklemek ve yönetmek için bulut tabanlı bir hizmeti entegre eder. </br>
+cookie-parser: Tarayıcı çerezlerini işlemek ve yönetmek için kullanılır.</br>
+dotenv: Çevresel değişkenleri projede kullanmak için kullanılır.</br>
+ejs: Şablon motoru olarak kullanılır, dinamik HTML içeriği oluşturmak için tercih edilir.</br>
+express: Web uygulama çerçevesidir, yönlendirme ve sunucu yönetimi için kullanılır.</br>
+express-fileupload: Dosya yükleme işlemlerini kolaylaştırmak için kullanılır.</br>
+jsonwebtoken: JSON Web Token'ları oluşturmak ve doğrulamak için kullanılır.</br>
+method-override: HTTP taleplerini düzenlemek ve geçersiz kılmak için kullanılır.</br>
+mongodb: MongoDB veritabanına erişim sağlar.</br>
+mongoose: MongoDB işlemlerini yönetmek ve veritabanını modellemek için kullanılır.</br>
 validator: Veri doğrulama işlemleri için kullanılır.
 
 ![Screenshot 2023-08-05 at 23 27 13](https://github.com/mustafakba/LensLight/assets/95040879/d83af8c3-0aa3-489e-b985-1f6a82b8efc0)
