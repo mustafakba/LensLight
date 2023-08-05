@@ -41,4 +41,12 @@ Sunucuyu çalıştırın
   npm start
 ```
 
+Giriş Yapın 
+
+```bash
+  username : admin1
+  password : 12345
+```
+
+
   
